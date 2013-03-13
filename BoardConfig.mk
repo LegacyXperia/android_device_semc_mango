@@ -18,4 +18,3 @@ TARGET_OTA_ASSERT_DEVICE := SK17i,SK17a,mango
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/semc/mango/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/semc/mango/bluetooth/vnd_mango.txt
