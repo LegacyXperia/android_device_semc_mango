@@ -6,9 +6,7 @@ key 115   VOLUME_UP         WAKE
 key 114   VOLUME_DOWN       WAKE
 
 # KEY_HOME
-key 139   MENU
 key 102   HOME              WAKE_DROPPED
-key 158   BACK
 
 # CAMERA Related Key
 key 212   CAMERA
