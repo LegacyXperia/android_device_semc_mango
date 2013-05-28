@@ -37,8 +37,15 @@ echo $val_filter > $dev/filter  # RFilter. Valid range is 0 - 3.
 
 # LMU AS3676 Configuration
 dev=/sys/devices/i2c-0/0-0040/leds
-echo 500 > $dev/button-backlight/max_current
-echo 5000 > $dev/keyboard-backlight/max_current
+echo 500 > $dev/button-backlight-rgb1/max_current_uA
+echo 500 > $dev/button-backlight-rgb2/max_current_uA
+echo 5000 > $dev/keyboard-backlight-rgb1/max_current_uA
+echo 5000 > $dev/keyboard-backlight-rgb2/max_current_uA
+echo 5000 > $dev/keyboard-backlight-rgb3/max_current_uA
+echo 5000 > $dev/keyboard-backlight-rgb4/max_current_uA
+echo 5000 > $dev/red/max_current_uA
+echo 5000 > $dev/green/max_current_uA
+echo 5000 > $dev/blue/max_current_uA
 
 dev=/sys/devices/platform/spi_qsd.0/spi0.0
 app_id=`cat  $dev/appid`
