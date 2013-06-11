@@ -18,6 +18,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mango device
 $(call inherit-product, device/semc/mango/mango.mk)
 
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 480
+TARGET_SCREEN_WIDTH := 320
+
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_mango
 PRODUCT_DEVICE := mango
