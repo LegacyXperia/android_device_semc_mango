@@ -15,6 +15,8 @@
 -include device/semc/mogami-common/BoardConfigCommon.mk
 -include vendor/semc/mango/BoardConfigVendor.mk
 
+TARGET_SPECIFIC_HEADER_PATH += device/semc/mango/include
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/semc/mango/bluedroid
 
