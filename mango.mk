@@ -16,6 +16,7 @@
 $(call inherit-product, vendor/semc/mango/mango-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/semc/mango/overlay
+DEVICE_PACKAGE_OVERLAYS += device/semc/mogami-common/overlay-keyboard
 
 $(call inherit-product, device/semc/mogami-common/mogami.mk)
 
