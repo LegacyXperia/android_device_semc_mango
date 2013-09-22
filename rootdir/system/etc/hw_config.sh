@@ -55,6 +55,3 @@ case "$app_id" in
         ;;
 esac
 cyttsp_fwloader -dev $dev -fw /system/etc/firmware/$fw
-
-# TI BQ275xx firmware loader
-bq275xx_fwloader
