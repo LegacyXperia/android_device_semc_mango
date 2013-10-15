@@ -31,4 +31,4 @@ SOMC_CFG_SENSORS_PROXIMITY_APDS9700 := yes
 TARGET_OTA_ASSERT_DEVICE := SK17i,SK17a,mango
 
 # CM Hardware tunables
-BOARD_HARDWARE_CLASS := device/semc/mango/cmhw
+BOARD_HARDWARE_CLASS += device/semc/mango/cmhw
