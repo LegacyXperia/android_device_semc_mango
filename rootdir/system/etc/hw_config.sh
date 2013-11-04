@@ -35,7 +35,7 @@ echo $val_freq > $dev/freq      # Burst frequency. Valid range is 0 - 3.
 echo $val_threshold > $dev/threshold # sensor threshold. Valid range is 0 - 15 (0.12V - 0.87V)
 echo $val_filter > $dev/filter  # RFilter. Valid range is 0 - 3.
 
-dev=/sys/devices/platform/spi_qsd.0/spi0.0
+dev=/sys/devices/platform/spi_qsd.0/spi_master/spi0/spi0.0
 app_id=`cat  $dev/appid`
 case "$app_id" in
 	"0x0603")
