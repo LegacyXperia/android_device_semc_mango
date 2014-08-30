@@ -34,3 +34,24 @@ echo $val_nburst > $dev/nburst  # Number of pulses in burst. Valid range is 0 - 
 echo $val_freq > $dev/freq      # Burst frequency. Valid range is 0 - 3.
 echo $val_threshold > $dev/threshold # sensor threshold. Valid range is 0 - 15 (0.12V - 0.87V)
 echo $val_filter > $dev/filter  # RFilter. Valid range is 0 - 3.
+
+dev=/sys/devices/platform/spi_qsd.0/spi_master/spi0/spi0.0
+app_id=`cat  $dev/appid`
+case "$app_id" in
+	"0x0603")
+		fw=touch_mango_seiko.hex
+        ;;
+	"0x0103")
+		fw=touch_mango_sony_type1.hex
+        ;;
+	"0x0113")
+		fw=touch_mango_sony_type2.hex
+        ;;
+	"0x0203")
+		fw=touch_mango_hitachi.hex
+        ;;
+	*)
+		fw=touch_mango_sony_type1.hex
+        ;;
+esac
+cyttsp_fwloader -dev $dev -fw /system/etc/firmware/$fw

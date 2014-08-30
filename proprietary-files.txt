@@ -67,3 +67,10 @@ bin/akmd8975
 # Offline charging
 bin/chargemon
 lib/libmiscta.so
+
+# Touchscreen firmware
+bin/cyttsp_fwloader
+etc/firmware/touch_mango_sony_type1.hex
+etc/firmware/touch_mango_sony_type2.hex
+etc/firmware/touch_mango_seiko.hex
+etc/firmware/touch_mango_hitachi.hex
