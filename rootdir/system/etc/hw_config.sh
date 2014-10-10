@@ -50,6 +50,9 @@ case "$app_id" in
 	"0x0203")
 		fw=touch_mango_hitachi.hex
         ;;
+	"0x0207")
+		fw=touch_satsuma_hitachi.hex
+        ;;
 	*)
 		fw=touch_mango_sony_type1.hex
         ;;

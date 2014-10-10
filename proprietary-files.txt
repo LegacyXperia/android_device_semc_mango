@@ -74,3 +74,4 @@ etc/firmware/touch_mango_sony_type1.hex
 etc/firmware/touch_mango_sony_type2.hex
 etc/firmware/touch_mango_seiko.hex
 etc/firmware/touch_mango_hitachi.hex
+etc/firmware/touch_satsuma_hitachi.hex
