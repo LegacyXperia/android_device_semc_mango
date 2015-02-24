@@ -52,5 +52,4 @@ PRODUCT_PACKAGES += \
 
 # Device properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=160 \
-    com.qc.hdmi_out=false
+    ro.sf.lcd_density=160
