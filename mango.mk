@@ -33,7 +33,6 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 # Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc \
-    $(LOCAL_PATH)/rootdir/init.semc.usb.rc:root/init.semc.usb.rc \
     $(LOCAL_PATH)/rootdir/system/etc/hw_config.sh:system/etc/hw_config.sh
 
 # Device specific configs
@@ -52,4 +51,5 @@ PRODUCT_PACKAGES += \
 
 # Device properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=160
+    ro.sf.lcd_density=160 \
+    ro.usb.pid_suffix=15A
